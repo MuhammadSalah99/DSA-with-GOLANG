@@ -31,8 +31,26 @@ func isDivisibleBy3(num int)  bool {
 
 }
 
+func reveseNumber(num int) int {
+    rev := 0
+    for num != 0 {
+        rem :=  num%10
+        rev = rev*10 + rem
+        num /=10
+    }
+    return rev
+}
+
+func isPalindrome(num int) bool {
+    if num != reveseNumber(num) {
+        return false
+    }
+    return true
+}
 func main() {
     fmt.Println("hi from new file")
     fmt.Println(sum(5))
     fmt.Println(isDivisibleBy3(63))
+    fmt.Println(isPalindrome(235))
+    fmt.Println(isPalindrome(2002))
 }
