@@ -48,6 +48,7 @@ func bubbleSort(arr []int) []int {
 
 type Node struct {
 	next  *Node
+    prev *Node
 	value int
 }
 
