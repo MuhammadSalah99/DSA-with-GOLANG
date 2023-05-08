@@ -54,6 +54,7 @@ type Node struct {
 
 type LinkedList struct {
 	head *Node
+    length int
 }
 
 func (list *LinkedList) AddNode(value int) {
@@ -204,6 +205,7 @@ func main() {
 	stack.Push(2)
 
 	fmt.Println(stack.Pop())
+    fmt.Println("Hello from Hussien")
 	fmt.Println(stack.Pop())
 
 }

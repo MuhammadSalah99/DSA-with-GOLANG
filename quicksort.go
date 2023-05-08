@@ -28,7 +28,7 @@ func quickSortStart(arr []int) []int {
 	return quickSort(arr, 0, len(arr)-1)
  }
 
-func main(){
-    
+func main(){ 
     fmt.Println(quickSortStart([]int{5, 6, 7, 2, 1, 0}))
+    fmt.Println("Hello from Hussien")
 }
